@@ -1,6 +1,7 @@
 # hq.bar
 ### shutdown 
- [ ] portal.bar
- [ ] portal2.bar
- [ ] post upcoming buses
-
+- [ ] portal.bar
+- [ ] portal2.bar
+### info messages
+- [ ] post upcoming buses
+- [ ] cryptocurrency prices
