@@ -1,17 +1,35 @@
 <template>
-<div id="app">
-      <header>
-            <span>HQ.bar - WiP</span>
-      </header>
-      <main>
-            <button @click="turnOnPortal('http://portal.bar')">Turn On Portal</button></br>
-            <button @click="turnOnPortal('http://portal2.bar')">Turn On Portal 2</button></br>
-            <button @click="turnOffPortal('http://portal.bar')">Turn off Portal</button></br>
-            <button @click="turnOffPortal('http://portal2.bar')">Turn off Portal 2</button></br>
-            <button @click="hackerPortal('http://portal2.bar')">hacker Portal 2</button></br>
-            <!-- <router-view></router-view> -->
-      </main>
-</div>
+  <section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Mission control
+      </h1>
+      <h2 class="subtitle">
+        Progressbar hackerspace
+      </h2>
+    </div>
+  </div>
+
+      <div class="columns">
+        <div class="column is-mobile">
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-large is-danger is-outlined">Turn Off Portal</button>
+        </div>
+        <div class="column is-mobile">
+          <button @click="turnOffPortal('http://portal2.bar')" class="button is-large is-danger is-outlined">Turn Off Portal 2</button>
+        </div>
+        <div class="column">
+          <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
+        </div>
+        <div class="column is-mobile">
+          <button @click="turnOnPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Turn On Portal 2</button>
+        </div>
+        <div class="column is-mobile">
+          <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
+        </div>
+      </div>
+      <!-- <router-view></router-view> -->
+</section>
 </template>
 
 <script>
@@ -77,7 +95,9 @@ export default {
 </script>
 
 <style>
-body {
+@import "~bulma/css/bulma.css";
+
+/*body {
     margin: 0;
 }
 
@@ -110,5 +130,5 @@ header span {
     font-weight: 400;
     box-sizing: border-box;
     padding-top: 16px;
-}
+}*/
 </style>
