@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-dark">
+  <section class="container hero is-dark">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -8,26 +8,27 @@
       <h2 class="subtitle">
         Progressbar hackerspace
       </h2>
-    </div>
-  </div>
-
-      <div class="columns">
-        <div class="column is-mobile">
+      <div class="columns is-desktop">
+        <div class="column is-offset-1">
           <button @click="turnOffPortal('http://portal.bar')" class="button is-large is-danger is-outlined">Turn Off Portal</button>
         </div>
-        <div class="column is-mobile">
+        <div class="column is-offset-1">
           <button @click="turnOffPortal('http://portal2.bar')" class="button is-large is-danger is-outlined">Turn Off Portal 2</button>
         </div>
-        <div class="column">
+        <div class="column is-offset-1">
           <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
         </div>
-        <div class="column is-mobile">
+        <div class="column is-offset-1">
           <button @click="turnOnPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Turn On Portal 2</button>
         </div>
-        <div class="column is-mobile">
+        <div class="column is-offset-1">
           <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
         </div>
       </div>
+    </div>
+  </div>
+
+
       <!-- <router-view></router-view> -->
 </section>
 </template>
@@ -97,9 +98,10 @@ export default {
 <style>
 @import "~bulma/css/bulma.css";
 
-/*body {
-    margin: 0;
+html {
+    background-color: #363636;
 }
+/*
 
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
