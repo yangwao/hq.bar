@@ -24,6 +24,9 @@
         <div class="column is-offset-1">
           <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
         </div>
+        <div class="column is-offset-1">
+          <button @click="openBlackDoors()" class="button is-large is-white is-outlined">Open Black doors</button>
+        </div>
       </div>
     </div>
   </div>
@@ -50,10 +53,10 @@ export default {
           }
         })
         .then(response => {
-          console.log(response);
+          console.log(response)
         })
         .catch(e => {
-          console.log(e);
+          console.log(e)
         })
     },
     turnOnPortal(target) {
@@ -67,10 +70,10 @@ export default {
           }
         })
         .then(response => {
-          console.log(response);
+          console.log(response)
         })
         .catch(e => {
-          console.log(e);
+          console.log(e)
         })
     },
     hackerPortal(target) {
@@ -84,11 +87,23 @@ export default {
           }
         })
         .then(response => {
-          console.log(response);
+          console.log(response)
         })
         .catch(e => {
-          console.log(e);
+          console.log(e)
         })
+    },
+    openBlackDoors() {
+      axios({
+        method: 'get',
+        url: 'http://door.bar/outsidedoor',
+      })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(e => {
+        console.log(e)
+      })
     }
 
   }
