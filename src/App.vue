@@ -8,31 +8,33 @@
       <h2 class="subtitle">
         Progressbar hackerspace
       </h2>
-      <div class="columns is-desktop">
+      <div class="columns">
         <div class="column is-offset-1">
           <button @click="turnOffPortal('http://portal.bar')" class="button is-large is-danger is-outlined">Turn Off Portal</button>
         </div>
         <div class="column is-offset-1">
           <button @click="turnOffPortal('http://portal2.bar')" class="button is-large is-danger is-outlined">Turn Off Portal 2</button>
         </div>
-        <div class="column is-offset-1">
-          <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
-        </div>
-        <div class="column is-offset-1">
-          <button @click="turnOnPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Turn On Portal 2</button>
-        </div>
-        <div class="column is-offset-1">
-          <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
-        </div>
-        <div class="column is-offset-1">
-          <button @click="openBlackDoors()" class="button is-large is-white is-outlined">Open Black doors</button>
-        </div>
+      </div>
+      <div class="columns">
+          <div class="column is-offset-1">
+            <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
+          </div>
+          <div class="column is-offset-1">
+            <button @click="turnOnPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Turn On Portal 2</button>
+          </div>
+      </div>
+      <div class="columns">
+          <div class="column is-offset-1">
+            <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
+          </div>
+          <div class="column is-offset-1">
+            <button @click="openBlackDoors()" class="button is-large is-white is-outlined">Open Black doors</button>
+          </div>
       </div>
     </div>
   </div>
-
-
-      <!-- <router-view></router-view> -->
+  <!-- <router-view></router-view> -->
 </section>
 </template>
 
