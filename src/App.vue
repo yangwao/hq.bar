@@ -6,7 +6,7 @@
         Mission control
       </h1>
       <h2 class="subtitle">
-        Progressbar hackerspace
+        <a href="https://donate.progressbar.sk">Progressbar hackerspace [Send donation]</a>
       </h2>
       <div class="columns">
         <div class="column is-offset-1">
@@ -31,6 +31,11 @@
           <div class="column is-offset-1">
             <button @click="openBlackDoors()" class="button is-large is-white is-outlined">Open Black doors</button>
           </div>
+      </div>
+      <div class="columns">
+        <div class="column is-offset-1">
+          <a href="https://donate.progressbar.sk"><button class="button is-large is-warning is-outlined">Send donation</button></a>
+        </div>
       </div>
     </div>
   </div>
