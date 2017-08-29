@@ -17,6 +17,14 @@
         </div>
       </div>
       <div class="columns">
+        <div class="column is-offset-1">
+          <button @click="rainbowPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Rainbow Portal</button>
+        </div>
+        <div class="column is-offset-1">
+          <button @click="rainbowPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Rainbow Portal 2</button>
+        </div>
+      </div>
+      <div class="columns">
           <div class="column is-offset-1">
             <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
           </div>
@@ -99,6 +107,18 @@ export default {
         .catch(e => {
           console.log(e)
         })
+    },
+    rainbowPortal(target) {
+      var colors = {
+        r: Math.floor((Math.random() * 1000) + 1),
+        g: Math.floor((Math.random() * 1000) + 1),
+        b: Math.floor((Math.random() * 1000) + 1)
+      }
+      axios({
+        method: 'post',
+        baseURL: target,
+        params: colors
+      })
     },
     openBlackDoors() {
       axios({
