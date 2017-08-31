@@ -6,43 +6,43 @@
         Mission control
       </h1>
       <h2 class="subtitle">
-        <a href="https://donate.progressbar.sk">Progressbar hackerspace [Send donation]</a>
+        <a href="https://donate.progressbar.sk">Progressbar hackerspace || Send donation</a>
       </h2>
-      <div class="columns">
-        <div class="column is-offset-1">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-large is-danger is-outlined">Turn Off Portal</button>
+      <div class="columns is-mobile">
+        <div class="column">
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Turn Off Portal</button>
         </div>
-        <div class="column is-offset-1">
-          <button @click="turnOffPortal('http://portal2.bar')" class="button is-large is-danger is-outlined">Turn Off Portal 2</button>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-offset-1">
-          <button @click="rainbowPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Rainbow Portal</button>
-        </div>
-        <div class="column is-offset-1">
-          <button @click="rainbowPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Rainbow Portal 2</button>
+        <div class="column">
+          <button @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Turn Off Portal 2</button>
         </div>
       </div>
-      <div class="columns">
-          <div class="column is-offset-1">
-            <button @click="turnOnPortal('http://portal.bar')" class="button is-large is-primary is-outlined">Turn On Portal</button>
+      <div class="columns is-mobile">
+        <div class="column">
+          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">Rainbow Portal</button>
+        </div>
+        <div class="column">
+          <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">Rainbow Portal 2</button>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+          <div class="column">
+            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">Turn On Portal</button>
           </div>
-          <div class="column is-offset-1">
-            <button @click="turnOnPortal('http://portal2.bar')" class="button is-large is-primary is-outlined">Turn On Portal 2</button>
+          <div class="column">
+            <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">Turn On Portal 2</button>
           </div>
       </div>
-      <div class="columns">
-          <div class="column is-offset-1">
-            <button @click="hackerPortal('http://portal2.bar')" class="button is-large is-success is-outlined">Hacker Portal 2</button>
+      <div class="columns is-mobile">
+          <div class="column ">
+            <button @click="hackerPortal('http://portal2.bar')" class="button is-success is-outlined">Hacker Portal 2</button>
           </div>
-          <div class="column is-offset-1">
-            <button @click="openBlackDoors()" class="button is-large is-white is-outlined">Open Black doors</button>
+          <div class="column">
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black doors</button>
           </div>
       </div>
-      <div class="columns">
-        <div class="column is-offset-1">
-          <a href="https://donate.progressbar.sk"><button class="button is-large is-warning is-outlined">Send donation</button></a>
+      <div class="columns is-mobile">
+        <div class="column">
+          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send donation</button></a>
         </div>
       </div>
     </div>
