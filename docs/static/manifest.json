@@ -1,6 +1,6 @@
 {
-  "name": "hq",
-  "short_name": "hq.bar",
+  "name": "Mission Control Progressbar",
+  "short_name": "hq.bar Progressbar",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",

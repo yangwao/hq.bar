@@ -18,18 +18,18 @@
       </div>
       <div class="columns is-mobile">
         <div class="column">
-          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">Rainbow 🌈 Portal</button>
+          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 Portal</button>
         </div>
         <div class="column">
-          <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">Rainbow 🌈 Portal 2</button>
+          <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">🌈 Portal 2</button>
         </div>
       </div>
       <div class="columns is-mobile">
           <div class="column">
-            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">Turn On ⚡️ Portal</button>
+            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️ Portal</button>
           </div>
           <div class="column">
-            <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">Turn On ⚡️ Portal 2</button>
+            <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">⚡️ Portal 2</button>
           </div>
       </div>
       <div class="columns is-mobile">
