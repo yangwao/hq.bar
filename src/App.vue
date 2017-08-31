@@ -18,18 +18,18 @@
       </div>
       <div class="columns is-mobile">
         <div class="column">
-          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">Rainbow Portal</button>
+          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">Rainbow 🌈 Portal</button>
         </div>
         <div class="column">
-          <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">Rainbow Portal 2</button>
+          <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">Rainbow 🌈 Portal 2</button>
         </div>
       </div>
       <div class="columns is-mobile">
           <div class="column">
-            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">Turn On Portal</button>
+            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">Turn On ⚡️ Portal</button>
           </div>
           <div class="column">
-            <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">Turn On Portal 2</button>
+            <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">Turn On ⚡️ Portal 2</button>
           </div>
       </div>
       <div class="columns is-mobile">
@@ -37,12 +37,12 @@
             <button @click="hackerPortal('http://portal2.bar')" class="button is-success is-outlined">Hacker Portal 2</button>
           </div>
           <div class="column">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black doors</button>
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 doors</button>
           </div>
       </div>
       <div class="columns is-mobile">
         <div class="column">
-          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send donation</button></a>
+          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
         </div>
       </div>
     </div>
