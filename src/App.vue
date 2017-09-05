@@ -45,7 +45,7 @@
           <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
         </div>
         <div class="column">
-          <button @click="enableAutoBlackDoors()" class="button is-white is-outlined"> 1-click 🚪 on doors</button>
+          <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 on doors</button>
         </div>
       </div>
     </div>
