@@ -37,12 +37,15 @@
             <button @click="hackerPortal('http://portal2.bar')" class="button is-success is-outlined">Hacker Portal 2</button>
           </div>
           <div class="column">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 doors</button>
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open black 🚪 doors</button>
           </div>
       </div>
       <div class="columns is-mobile">
         <div class="column">
           <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
+        </div>
+        <div class="column">
+          <button @click="enableAutoBlackDoors()" class="button is-white is-outlined"> 1-click 🚪 on doors</button>
         </div>
       </div>
     </div>
@@ -131,8 +134,19 @@ export default {
       .catch(e => {
         console.log(e)
       })
+    },
+    enableAutoBlackDoors() {
+      axios({
+        method: 'get',
+        url: 'http://door.bar/enableauto',
+      })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(e => {
+        console.log(e)
+      })
     }
-
   }
 }
 </script>
