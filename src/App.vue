@@ -2,10 +2,9 @@
   <div>
     <div class="container">
       <div class="columns is-mobile">
-        <div class="column is-narrow">
+        <div class="column">
           <div class="crop">
-            <a href="https://progressbar.sk">
-                  <img src="./assets/progressbar-logo.svg" alt="progressbar logo">
+            <a href="https://www.progressbar.sk"><img src="./assets/progressbar-logo.svg" alt="progressbar logo">
             </a>
           </div>
         </div>
