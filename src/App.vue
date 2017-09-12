@@ -1,57 +1,56 @@
 <template>
-  <section class="container hero is-dark">
-  <div class="hero-body">
+  <div>
     <div class="container">
-      <h1 class="title">
-        Mission control
-      </h1>
-      <h2 class="subtitle">
-        <a href="https://donate.progressbar.sk">Progressbar hackerspace || Send donation</a>
-      </h2>
       <div class="columns is-mobile">
-        <div class="column">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Turn Off Portal</button>
-        </div>
-        <div class="column">
-          <button @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Turn Off Portal 2</button>
+        <div class="column is-narrow">
+          <div class="crop">
+            <a href="https://progressbar.sk">
+                  <img src="./assets/progressbar-logo.svg" alt="progressbar logo">
+            </a>
+          </div>
         </div>
       </div>
       <div class="columns is-mobile">
-        <div class="column">
+        <div class="column is-narrow is-offset-1">
+          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-narrow is-offset-1">
           <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 Portal</button>
         </div>
-        <div class="column">
+        <div class="column is-narrow">
           <button @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">🌈 Portal 2</button>
         </div>
       </div>
       <div class="columns is-mobile">
-          <div class="column">
+          <div class="column is-narrow is-offset-1">
             <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️ Portal</button>
           </div>
-          <div class="column">
+          <div class="column is-narrow">
             <button @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">⚡️ Portal 2</button>
           </div>
       </div>
-      <div class="columns is-mobile">
-          <div class="column ">
-            <button @click="hackerPortal('http://portal2.bar')" class="button is-success is-outlined">Hacker Portal 2</button>
-          </div>
-          <div class="column">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open black 🚪 doors</button>
-          </div>
+      <div class="columns">
+        <div class="column is-narrow is-offset-1">
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Turn Off Portal</button>
+        </div>
+        <div class="column is-narrow">
+          <button @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Turn Off Portal 2</button>
+        </div>
       </div>
-      <div class="columns is-mobile">
-        <div class="column">
-          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
-        </div>
-        <div class="column">
-          <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 on doors</button>
-        </div>
+      <div class="columns">
+          <div class="column is-narrow is-offset-1">
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 doors</button>
+          </div>
+          <div class="column is-narrow">
+            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 doors</button>
+          </div>
       </div>
     </div>
   </div>
   <!-- <router-view></router-view> -->
-</section>
+</div>
 </template>
 
 <script>
@@ -59,6 +58,9 @@ import axios from 'axios';
 
 export default {
   name: 'app',
+  data() {
+    bitcoinPrice = 1
+  },
   methods: {
     turnOffPortal(target) {
       axios({
@@ -113,9 +115,9 @@ export default {
     },
     rainbowPortal(target) {
       var colors = {
-        r: Math.floor((Math.random() * 1000) + 1),
-        g: Math.floor((Math.random() * 1000) + 1),
-        b: Math.floor((Math.random() * 1000) + 1)
+        r: Math.floor((Math.random() * 1023) + 1),
+        g: Math.floor((Math.random() * 1023) + 1),
+        b: Math.floor((Math.random() * 1023) + 1)
       }
       axios({
         method: 'post',
@@ -155,38 +157,19 @@ export default {
 @import "~bulma/css/bulma.css";
 
 html {
-    background-color: #363636;
-}
-/*
-
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: x§§ grayscale;
-    color: #2c3e50;
+    background-color: #000;
 }
 
-main {
-    text-align: center;
-    margin-top: 40px;
+.crop {
+    /*width: 200px;*/
+    height: 150px;
+    overflow: hidden;
+    padding: 10px;
 }
 
-header {
-    margin: 0;
-    height: 56px;
-    padding: 0 16px 0 24px;
-    background-color: #35495E;
-    color: #ffffff;
+.crop img {
+    /*width: 400px;*/
+    /*height: 300px;*/
+    margin: -128px 0 0 -10px;
 }
-
-header span {
-    display: block;
-    position: relative;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: .02em;
-    font-weight: 400;
-    box-sizing: border-box;
-    padding-top: 16px;
-}*/
 </style>
