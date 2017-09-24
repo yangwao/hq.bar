@@ -19,7 +19,7 @@
           <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 Portal</button>
         </div>
         <div class="column is-narrow">
-          <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 Portal 2</button>
+          <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 Portal 4</button>
         </div>
       </div>
       <div class="columns is-mobile">
@@ -27,7 +27,7 @@
             <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️ Portal</button>
           </div>
           <div class="column is-narrow">
-            <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️ Portal 2</button>
+            <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️ Portal 4</button>
           </div>
       </div>
       <div class="columns">
@@ -35,7 +35,7 @@
           <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Turn Off Portal</button>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Turn Off Portal 2</button>
+          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Turn Off Portal 4</button>
         </div>
       </div>
       <div class="columns">
