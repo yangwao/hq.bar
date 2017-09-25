@@ -21,6 +21,9 @@
         <div class="column is-narrow">
           <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 Portal 4</button>
         </div>
+        <div class="column is-narrow">
+          <button @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 Portal 3</button>
+        </div>
       </div>
       <div class="columns is-mobile">
           <div class="column is-narrow is-offset-1">
@@ -32,10 +35,13 @@
       </div>
       <div class="columns">
         <div class="column is-narrow is-offset-1">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Turn Off Portal</button>
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off Portal</button>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Turn Off Portal 4</button>
+          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off Portal 4</button>
+        </div>
+        <div class="column is-narrow">
+          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off Portal 3</button>
         </div>
       </div>
       <div class="columns">
