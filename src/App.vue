@@ -16,13 +16,13 @@
       </div>
       <div class="columns is-mobile">
         <div class="column is-narrow is-offset-1">
-          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 Portal</button>
+          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 0</button>
         </div>
         <div class="column is-narrow">
-          <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 Portal 4</button>
+          <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</button>
         </div>
         <div class="column is-narrow">
-          <button @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 Portal 3</button>
+          <button @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 3</button>
         </div>
       </div>
       <div class="columns is-mobile">
@@ -33,23 +33,23 @@
             <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️ Portal 4</button>
           </div>
       </div>
-      <div class="columns">
+      <div class="columns is-mobile">
         <div class="column is-narrow is-offset-1">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off Portal</button>
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</button>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off Portal 4</button>
+          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</button>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off Portal 3</button>
+          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</button>
         </div>
       </div>
-      <div class="columns">
+      <div class="columns is-mobile">
           <div class="column is-narrow is-offset-1">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 doors</button>
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </button>
           </div>
           <div class="column is-narrow">
-            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 doors</button>
+            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </button>
           </div>
       </div>
     </div>
