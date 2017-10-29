@@ -15,6 +15,12 @@
         </div>
       </div>
       <div class="columns is-mobile is-centered">
+          <div class="column is-narrow">
+            <a @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </a>
+            <a @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </a>
+          </div>
+      </div>
+      <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</a>
         </div>
@@ -40,12 +46,6 @@
           <div class="column is-narrow">
             <a @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️💡 Portal</a>
             <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</a>
-          </div>
-      </div>
-      <div class="columns is-mobile is-centered">
-          <div class="column is-narrow">
-            <a @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </a>
-            <a @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </a>
           </div>
       </div>
       <div class="columns is-mobile is-centered">
