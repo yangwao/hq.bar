@@ -1,57 +1,76 @@
 <template>
   <div>
     <div class="container">
-      <div class="columns is-mobile">
-        <div class="column">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow is-offset-1">
           <div class="crop">
             <a href="https://www.progressbar.sk"><img src="./assets/progressbar-logo.svg" alt="progressbar logo">
             </a>
           </div>
         </div>
       </div>
-      <div class="columns is-mobile">
-        <div class="column is-narrow is-offset-1">
-          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send 💶💰⛓ donation</button></a>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a class="button is-warning is-outlined" href="https://donate.progressbar.sk">Send 💶💰⛓ donation</a>
         </div>
       </div>
-      <div class="columns is-mobile">
-        <div class="column is-narrow is-offset-1">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</button>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</a>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</button>
+          <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
         </div>
         <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</button>
+          <a @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</a>
         </div>
       </div>
-      <div class="columns is-mobile">
-        <div class="column is-narrow is-offset-1">
-          <button @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 0</button>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 0</a>
         </div>
         <div class="column is-narrow">
-          <button @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</button>
+          <a @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</a>
         </div>
         <div class="column is-narrow">
-          <button @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 3</button>
+          <a @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 3</a>
         </div>
       </div>
-      <div class="columns is-mobile">
-          <div class="column is-narrow is-offset-1">
-            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️💡 Portal</button>
-          </div>
+      <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
-            <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</button>
+            <a @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️💡 Portal</a>
+            <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</a>
           </div>
       </div>
-
-      <div class="columns is-mobile">
-          <div class="column is-narrow is-offset-1">
-            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </button>
-          </div>
+      <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </button>
+            <a @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </a>
+            <a @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </a>
           </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="controlLights('lab', 'right', 'Off')" class="button is-danger is-outlined">Lab Right Off</a>
+          <a @click="controlLights('lab', 'right', 'On')" class="button is-success is-outlined">Lab Right On</a>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="controlLights('lab', 'left', 'Off')" class="button is-danger is-outlined">Lab Left Off</a>
+          <a @click="controlLights('lab', 'left', 'On')" class="button is-success is-outlined">Lab Left On</a>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="controlLights('main', 'front', 'Off')" class="button is-danger is-outlined">Deck Front Off</a>
+          <a @click="controlLights('main', 'front', 'On')" class="button is-success is-outlined">Deck Front On</a>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="controlLights('main', 'back', 'Off')" class="button is-danger is-outlined">Deck Back Off</a>
+          <a @click="controlLights('main', 'back', 'On')" class="button is-success is-outlined">Deck Back On</a>
+        </div>
       </div>
     </div>
   </div>
@@ -149,6 +168,18 @@ export default {
       axios({
         method: 'get',
         url: 'http://door.bar/enableauto',
+      })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    },
+    controlLights(room, side, toggle) {
+      axios({
+        method: 'get',
+        url: `http://control.bar/lights/${room}/${side}/${toggle}`
       })
       .then(response => {
         console.log(response)
