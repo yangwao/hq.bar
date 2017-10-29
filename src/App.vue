@@ -11,7 +11,18 @@
       </div>
       <div class="columns is-mobile">
         <div class="column is-narrow is-offset-1">
-          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send ⛓💰 donation</button></a>
+          <a href="https://donate.progressbar.sk"><button class="button is-warning is-outlined">Send 💶💰⛓ donation</button></a>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-narrow is-offset-1">
+          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</button>
+        </div>
+        <div class="column is-narrow">
+          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</button>
+        </div>
+        <div class="column is-narrow">
+          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</button>
         </div>
       </div>
       <div class="columns is-mobile">
@@ -27,29 +38,19 @@
       </div>
       <div class="columns is-mobile">
           <div class="column is-narrow is-offset-1">
-            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️ Portal</button>
+            <button @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️💡 Portal</button>
           </div>
           <div class="column is-narrow">
-            <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️ Portal 4</button>
+            <button @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</button>
           </div>
       </div>
-      <div class="columns is-mobile">
-        <div class="column is-narrow is-offset-1">
-          <button @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</button>
-        </div>
-        <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</button>
-        </div>
-        <div class="column is-narrow">
-          <button @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</button>
-        </div>
-      </div>
+
       <div class="columns is-mobile">
           <div class="column is-narrow is-offset-1">
-            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </button>
+            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </button>
           </div>
           <div class="column is-narrow">
-            <button @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </button>
+            <button @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </button>
           </div>
       </div>
     </div>
