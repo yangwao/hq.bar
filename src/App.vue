@@ -22,29 +22,35 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">Off 0</a>
+          <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">Off 1</a>
         </div>
         <div class="column is-narrow">
-          <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
+          <a @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Off 2</a>
         </div>
         <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</a>
         </div>
+        <div class="column is-narrow">
+          <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
+        </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="rainbowPortal('http://portal1.bar')" class="button is-primary is-outlined">🌈 0</a>
+          <a @click="rainbowPortal('http://portal1.bar')" class="button is-primary is-outlined">🌈 1</a>
         </div>
         <div class="column is-narrow">
-          <a @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</a>
+          <a @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">🌈 2</a>
         </div>
         <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 3</a>
         </div>
+        <div class="column is-narrow">
+          <a @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</a>
+        </div>
       </div>
       <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
-            <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 Portal</a>
+            <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 Portal 1</a>
             <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</a>
           </div>
       </div>
