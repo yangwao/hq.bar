@@ -22,7 +22,7 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="turnOffPortal('http://portal.bar')" class="button is-danger is-outlined">Off 0</a>
+          <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">Off 0</a>
         </div>
         <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
@@ -33,7 +33,7 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="rainbowPortal('http://portal.bar')" class="button is-primary is-outlined">🌈 0</a>
+          <a @click="rainbowPortal('http://portal1.bar')" class="button is-primary is-outlined">🌈 0</a>
         </div>
         <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</a>
@@ -44,7 +44,7 @@
       </div>
       <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
-            <a @click="turnOnPortal('http://portal.bar')" class="button is-primary is-outlined">⚡️💡 Portal</a>
+            <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 Portal</a>
             <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</a>
           </div>
       </div>
@@ -72,6 +72,11 @@
           <a @click="controlLights('main', 'back', 'On')" class="button is-success is-outlined">Deck Back On</a>
         </div>
       </div>
+      <!-- <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="meetupOn()" class="button is-info is-outlined">Meetup On</a>
+        </div>
+      </div> -->
     </div>
   </div>
   <!-- <router-view></router-view> -->
@@ -187,6 +192,12 @@ export default {
       .catch(e => {
         console.log(e)
       })
+    },
+    meetupOn() {
+      turnOnPortal('http://portal1.bar')
+      turnOnPortal('http://portal4.bar')
+      turnOnPortal('http://portal3.bar')
+      enableAutoBlackDoors()
     }
   }
 }
