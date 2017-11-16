@@ -30,32 +30,26 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 1</a>
-          <a @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">⚡️💡 2</a>
-          <a @click="turnOnPortal('http://portal3.bar')" class="button is-primary is-outlined">⚡️💡 3</a>
-          <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 4</a>
+          <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">💡 1</a>
+          <a @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">💡 2</a>
+          <a @click="turnOnPortal('http://portal3.bar')" class="button is-primary is-outlined">💡 3</a>
+          <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">💡 4</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal1.bar')" class="button is-primary is-outlined">🌈 1</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal2.bar')" class="button is-primary is-outlined">🌈 2</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal3.bar')" class="button is-primary is-outlined">🌈 3</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="rainbowPortal('http://portal4.bar')" class="button is-primary is-outlined">🌈 4</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="rainbowPortalAll()" class="button is-primary is-outlined">🏳️‍🌈🌈</a>
+          <a @click="rainbowPortalAllOff()" class="button is-danger is-outlined">🏳️‍🌈🌈</a>
         </div>
         <div class="column is-narrow">
-          <a @click="rainbowPortalAllOff()" class="button is-danger is-outlined">🏳️‍🌈🌈</a>
+          <a @click="rainbowPortalAll()" class="button is-primary is-outlined">🏳️‍🌈🌈</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
