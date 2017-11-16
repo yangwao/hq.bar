@@ -23,15 +23,17 @@
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">Off 1</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Off 2</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</a>
-        </div>
-        <div class="column is-narrow">
           <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+          <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 1</a>
+          <a @click="turnOnPortal('http://portal2.bar')" class="button is-primary is-outlined">⚡️💡 2</a>
+          <a @click="turnOnPortal('http://portal3.bar')" class="button is-primary is-outlined">⚡️💡 3</a>
+          <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 4</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
@@ -49,10 +51,12 @@
         </div>
       </div>
       <div class="columns is-mobile is-centered">
-          <div class="column is-narrow">
-            <a @click="turnOnPortal('http://portal1.bar')" class="button is-primary is-outlined">⚡️💡 Portal 1</a>
-            <a @click="turnOnPortal('http://portal4.bar')" class="button is-primary is-outlined">⚡️💡 Portal 4</a>
-          </div>
+        <div class="column is-narrow">
+          <a @click="rainbowPortalAll()" class="button is-primary is-outlined">🏳️‍🌈🌈</a>
+        </div>
+        <div class="column is-narrow">
+          <a @click="rainbowPortalAllOff()" class="button is-danger is-outlined">🏳️‍🌈🌈</a>
+        </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
@@ -78,11 +82,6 @@
           <a @click="controlLights('main', 'back', 'On')" class="button is-success is-outlined">Deck Back On</a>
         </div>
       </div>
-      <!-- <div class="columns is-mobile is-centered">
-        <div class="column is-narrow">
-          <a @click="meetupOn()" class="button is-info is-outlined">Meetup On</a>
-        </div>
-      </div> -->
     </div>
   </div>
   <!-- <router-view></router-view> -->
@@ -199,11 +198,17 @@ export default {
         console.log(e)
       })
     },
-    meetupOn() {
-      turnOnPortal('http://portal1.bar')
-      turnOnPortal('http://portal4.bar')
-      turnOnPortal('http://portal3.bar')
-      enableAutoBlackDoors()
+    rainbowPortalAll() {
+      this.rainbowPortal('http://portal1.bar')
+      this.rainbowPortal('http://portal2.bar')
+      this.rainbowPortal('http://portal3.bar')
+      this.rainbowPortal('http://portal4.bar')
+    },
+    rainbowPortalAllOff() {
+      this.turnOffPortal('http://portal1.bar')
+      this.turnOffPortal('http://portal2.bar')
+      this.turnOffPortal('http://portal3.bar')
+      this.turnOffPortal('http://portal4.bar')
     }
   }
 }
