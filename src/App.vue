@@ -17,15 +17,15 @@
       <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
             <a @click="enableAutoBlackDoors()" class="button is-white is-outlined">1-click 🚪 </a>
-            <a @click="openBlackDoors()" class="button is-white is-outlined">Open Black 🚪 </a>
+            <a @click="openBlackDoors()" class="button is-white is-outlined">Black 🚪 doors</a>
           </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">Off 1</a>
-          <a @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">Off 2</a>
-          <a @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">Off 3</a>
-          <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">Off 4</a>
+          <a @click="turnOffPortal('http://portal1.bar')" class="button is-danger is-outlined">_1_</a>
+          <a @click="turnOffPortal('http://portal2.bar')" class="button is-danger is-outlined">_2_</a>
+          <a @click="turnOffPortal('http://portal3.bar')" class="button is-danger is-outlined">_3_</a>
+          <a @click="turnOffPortal('http://portal4.bar')" class="button is-danger is-outlined">_4_</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
@@ -54,26 +54,26 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('lab', 'right', 'Off')" class="button is-danger is-outlined">Lab Right Off</a>
-          <a @click="controlLights('lab', 'right', 'On')" class="button is-success is-outlined">Lab Right On</a>
+          <a @click="controlLights('lab', 'right', 'Off')" class="button is-danger is-outlined">Lab Right</a>
+          <a @click="controlLights('lab', 'right', 'On')" class="button is-success is-outlined">Lab Right</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('lab', 'left', 'Off')" class="button is-danger is-outlined">Lab Left Off</a>
-          <a @click="controlLights('lab', 'left', 'On')" class="button is-success is-outlined">Lab Left On</a>
+          <a @click="controlLights('lab', 'left', 'Off')" class="button is-danger is-outlined">Lab Left</a>
+          <a @click="controlLights('lab', 'left', 'On')" class="button is-success is-outlined">Lab Left</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('main', 'front', 'Off')" class="button is-danger is-outlined">Deck Front Off</a>
-          <a @click="controlLights('main', 'front', 'On')" class="button is-success is-outlined">Deck Front On</a>
+          <a @click="controlLights('main', 'front', 'Off')" class="button is-danger is-outlined">Deck Front</a>
+          <a @click="controlLights('main', 'front', 'On')" class="button is-success is-outlined">Deck Front</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('main', 'back', 'Off')" class="button is-danger is-outlined">Deck Back Off</a>
-          <a @click="controlLights('main', 'back', 'On')" class="button is-success is-outlined">Deck Back On</a>
+          <a @click="controlLights('main', 'back', 'Off')" class="button is-danger is-outlined">Deck Back</a>
+          <a @click="controlLights('main', 'back', 'On')" class="button is-success is-outlined">Deck Back</a>
         </div>
       </div>
     </div>
@@ -217,14 +217,14 @@ html {
 
 .crop {
     /*width: 200px;*/
-    height: 150px;
+    height: 70px;
     overflow: hidden;
     padding: 10px;
 }
 
 .crop img {
     /*width: 400px;*/
-    /*height: 300px;*/
+    height: 200px;
     margin: -128px 0 0 -10px;
 }
 </style>
