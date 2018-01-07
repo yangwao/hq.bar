@@ -54,14 +54,14 @@
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('lab', 'right', 'Off')" class="button is-danger is-outlined">Lab Right</a>
-          <a @click="controlLights('lab', 'right', 'On')" class="button is-success is-outlined">Lab Right</a>
+          <a @click="controlLights('lab', 'right', 'Off')" class="button is-danger is-outlined">🛠 Right</a>
+          <a @click="controlLights('lab', 'right', 'On')" class="button is-success is-outlined">🛠 Right</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
-          <a @click="controlLights('lab', 'left', 'Off')" class="button is-danger is-outlined">Lab Left</a>
-          <a @click="controlLights('lab', 'left', 'On')" class="button is-success is-outlined">Lab Left</a>
+          <a @click="controlLights('lab', 'left', 'Off')" class="button is-danger is-outlined">🛠 Left</a>
+          <a @click="controlLights('lab', 'left', 'On')" class="button is-success is-outlined">🛠 Left</a>
         </div>
       </div>
       <div class="columns is-mobile is-centered">
